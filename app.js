@@ -77,9 +77,6 @@ function getInfor() {
          };
       }
    input_task.value = '';
-   // console.log(task);
-   // console.log(taskTF);
-
 };
 
 
@@ -89,20 +86,10 @@ function act() {
    for (let x of taskTF) {
       sum += x;
    }
-   // var sumlc =0;
-   // for (let x of dataTF) {
-   //    sumlc += x;
-   // }
    const result = document.getElementById('result');
     if (sum != 0) { result.innerHTML = `Yeah, ${sum} task completed` } else {
       result.innerHTML = ``;
    }
-// } else{
-//    if (sumlc != 0) { result.innerHTML = `Yeah, ${sumlc} task completed` } else {
-//       result.innerHTML = ``;
-//    }
-// }
-
    
 };
 
